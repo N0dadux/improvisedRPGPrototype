@@ -1,6 +1,9 @@
 package com.prototype.prototypes;
 
-public abstract class Personaje implements Cloneable {
-     public abstract Personaje clonarSuperficial();
-     public abstract Personaje clonarProfundo();
+public interface Personaje extends Cloneable {
+     Personaje clonarSuperficial();
+
+     Personaje clonarProfundo();
+
+     void mostrar();
 }
